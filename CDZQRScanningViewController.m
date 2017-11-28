@@ -33,6 +33,9 @@ static AVCaptureVideoOrientation CDZVideoOrientationFromInterfaceOrientation(UII
         case UIInterfaceOrientationPortraitUpsideDown:
             return AVCaptureVideoOrientationPortraitUpsideDown;
             break;
+        case UIDeviceOrientationUnknown:
+            return AVCaptureVideoOrientationPortrait;
+            break;
     }
 }
 
